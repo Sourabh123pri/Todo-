@@ -18,7 +18,6 @@ button {
   color: white;
   display: flex;
   justify-content: space-between;
-  /* font-family: cursive; */
 }
 ul {
   display: flex;
@@ -51,16 +50,18 @@ input {
   border: rgb(0, 183, 255) solid 1px;
   font-size: large;
   transition: all 0.3s;
+  font-family: "Mulish", sans-serif;
 }
 input:hover {
   width: 8rem;
 }
 #titel_vel {
   display: block;
-  font-family: cursive;
+  padding-top: 10px;
+  font-family: "Mulish", sans-serif;
 }
-
 .contener {
+  font-family: "Mulish", sans-serif;
   display: block;
   padding: 0 86px 12px;
   margin: 5px auto;
@@ -70,14 +71,9 @@ input:hover {
   box-shadow: rgb(106, 107, 107) 0 0 15px 0px;
 }
 .heading_text {
-  /* font-family: -webkit-pictograph; */
   margin: 0.6rem 0;
-  /* color: blue; */
 }
 
-#titel_vel {
-  padding-top: 10px;
-}
 button {
   width: 8vw;
   height: 4.5vh;
@@ -97,11 +93,15 @@ button:hover {
   flex-wrap: wrap;
   margin: 0.5rem auto;
   width: 82%;
-  height: 30vh;
-  /* overflow-y: scroll;
-    -ms-overflow-style:none ; 
-    scrollbar-width: none; */
+  height: 64vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+.note_contner::-webkit-scrollbar {
+  display: none;
+}
+
 .card {
   margin: 0.2rem 0.4rem;
   padding: 0.5rem;
@@ -132,7 +132,7 @@ p {
 .notes {
   text-align: center;
 }
-footer{
+footer {
   text-align: center;
 }
 @media only screen and (max-width: 600px) {
@@ -217,10 +217,10 @@ footer{
     width: 294px !important;
     height: 26px !important;
   }
-  .card{
-      width: 26.5vw;
+  .card {
+    width: 26.5vw;
   }
-  .note_contner{
-      width: 97%;
+  .note_contner {
+    width: 97%;
   }
 }
