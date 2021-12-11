@@ -35,9 +35,10 @@ function updetnotes() {
   let html = "";
   nodesObj.forEach(function (element, index) {
     html += `
-              <div class="card">
-              <h3>${element.titel}</h3>
-              <p>${element.text}</p>
+              <div class="card">  <spam>${index+1}</spam>
+              <h3 style=" display: inline-block;"">${element.titel}</h3>
+              <p>${element.text}</p> 
+             
               <div class="btn"><button onclick=del(this.id) id=${index} >Delete Task</button></div>
               </div>`;
   });
@@ -84,3 +85,9 @@ search.addEventListener("input", () => {
     }
   });
 });
+const footer = document.getElementById("footer");
+setInterval(() => {
+  const times = new Date();
+  const dateAndTime = times.toLocaleTimeString();
+  footer.innerText = dateAndTime;
+}, 1000);
