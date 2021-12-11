@@ -152,7 +152,7 @@ p {
     left: 0;
   }
   .rigth {
-    right: 60px;
+    right: 19px;
     top: 3px;
   }
   input {
@@ -172,7 +172,7 @@ p {
   }
 
   .contener {
-    width: 100%;
+    width: 94%;
     padding: 10px 5px;
   }
   .heading_text {
@@ -188,7 +188,7 @@ p {
     width: 100%;
   }
   .card {
-    width: 23.5vw;
+    width: 26vw;
     margin: 0.2rem 0.2rem;
   }
   .card {
